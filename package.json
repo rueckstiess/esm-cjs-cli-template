@@ -9,7 +9,7 @@
     "prepublish": "yarn build"
   },
   "bin": {
-    "esmcjscli": "bin/cli"
+    "something": "bin/cli"
   },
   "author": "Thomas Rueckstiess",
   "license": "MIT",

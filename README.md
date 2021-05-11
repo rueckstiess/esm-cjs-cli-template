@@ -1,17 +1,19 @@
 # esm-cjs-cli-template
 
-Boilerplate template for hybrid ESM/CJS modules with CLI support
+Boilerplate template for hybrid ESM/CJS modules with CLI support.
 
 ## Programmatic Usage (ESM)
 
 ```js
-
+import { something } from "something";
+something();
 ```
 
 ## Programmatic Usage (CJS)
 
 ```js
-
+const something = require("something").default;
+something();
 ```
 
 ## Command Line Usage
@@ -19,11 +21,11 @@ Boilerplate template for hybrid ESM/CJS modules with CLI support
 Install with:
 
 ```bash
-npm install -g esm-cjs-cli-template
+npm install -g something
 ```
 
-Run the script with an aggregation pipeline in JSON (and optional salt):
+Run the script:
 
 ```bash
-esmcjscli --help
+something --help
 ```
