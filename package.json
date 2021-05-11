@@ -1,0 +1,29 @@
+{
+  "name": "esm-cjs-cli-template",
+  "version": "0.1.0",
+  "description": "Boilerplate template for hybrid ESM/CJS modules with CLI support",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha -r esm ./src/**/*.test.js --watch",
+    "build": "babel src --out-dir lib",
+    "prepublish": "yarn build"
+  },
+  "bin": {
+    "esmcjscli": "bin/cli"
+  },
+  "author": "Thomas Rueckstiess",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "chai": "^4.3.4",
+    "esm": "^3.2.25",
+    "mocha": "^8.3.2"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
